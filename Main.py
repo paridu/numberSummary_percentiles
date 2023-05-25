@@ -44,7 +44,7 @@ with tab2.caption("Sales By percentiles"):
 
 def ad():
  theme_plotly = None # None or streamlit
- column=st.sidebar.selectbox('select a column',['PRODUCTLINE','COUNTRY','CITY'])
+ column=st.sidebar.selectbox('select a column',['COUNTRY','PRODUCTLINE','CITY'])
  type_of_column=st.sidebar.radio("What kind of analysis",['Categorical','Numerical'])
 
  c1,c2=st.columns([2,1])
