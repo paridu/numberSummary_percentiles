@@ -20,7 +20,7 @@ tab1, tab2 = st.tabs(["My Excel Database","Sales By percentiles"])
 with tab1:
  with st.expander("Show Workbook"):
   #st.dataframe(df_selection,use_container_width=True)
-  shwdata = st.multiselect('Filter :', df.columns, default=[])
+  shwdata = st.multiselect('Filter :', df.columns, default=["SALES","ORDERDATE","STATUS","YEAR_ID","PRODUCTLINE","CUSTOMERNAME","CITY","COUNTRY"])
   st.dataframe(df[shwdata],use_container_width=True
   )
 
